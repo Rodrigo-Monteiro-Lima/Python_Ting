@@ -1,7 +1,3 @@
-from ting_file_management.queue import Queue
-from ting_file_management.file_process import process
-
-
 def exists_word(word, instance):
     arr = []
     for i in range(len(instance)):
@@ -42,9 +38,3 @@ def search_by_word(word, instance):
         if dict["ocorrencias"]:
             arr.append(dict)
     return arr
-
-
-if __name__ == "__main__":
-    project = Queue()
-    process("statics/nome_pedro.txt", project)
-    exists_word("pedroasdasd", project)
