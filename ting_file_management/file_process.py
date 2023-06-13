@@ -14,7 +14,7 @@ def process(path_file, instance):
             }
             instance.enqueue(processed_file)
             print(processed_file, file=sys.stdout)
-    return None
+            return processed_file
 
 
 def remove(instance):
