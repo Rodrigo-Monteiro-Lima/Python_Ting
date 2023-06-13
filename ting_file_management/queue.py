@@ -27,6 +27,7 @@ class Queue(AbstractQueue):
         if len(self._data) == 0:
             return False
         for i in range(len(self._data)):
-            if self._data[i]["nome_do_aquivo"] == path_file:
+            if self._data[i]["nome_do_arquivo"] == path_file:
                 return True
-            return False
+
+        return False
